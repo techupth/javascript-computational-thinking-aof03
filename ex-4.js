@@ -82,3 +82,10 @@ let orders = [
 ];
 
 // Start coding here
+let totalOrderPrices = orders.reduce((total, order) => {
+  return total + (order.productPrice * order.productQuantity);
+}, 0);
+
+console.log("Total-order-prices:", totalOrderPrices);
+
+
